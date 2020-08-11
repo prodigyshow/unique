@@ -336,3 +336,71 @@ template {
 [hidden] {
   display: none;
 }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1005px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffc038;
+  height: 100vh;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 0;
+}
+
+.header__logo {
+  padding-top: 5px;
+}
+
+.header__menu {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header__menu a {
+  color: #464646;
+}
+
+.header__menu li {
+  padding-left: 42px;
+}
+
+.header__menu li:first-child {
+  padding-left: 0px;
+}
+
+.header__menu-list {
+  display: flex;
+}
+
+.header__menu-item_tel {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.header__menu-item_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
