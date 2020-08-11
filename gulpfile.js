@@ -7,7 +7,7 @@ let gulp = require('gulp'),
 
 gulp.task('scss', function() {
     return gulp.src('assets/scss/**/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets/css')) 
         .pipe(browserSync.reload({stream: true}))
@@ -46,5 +46,4 @@ gulp.task('browser-sync', function() {
         }
     });
 });
-
 gulp.task('default', gulp.parallel('scss', 'js', 'browser-sync', 'watch'));
