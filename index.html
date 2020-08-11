@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Tech Website</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="Home">
         <div class="container">
 
             <a class="header__logo" href="#">
@@ -23,12 +22,12 @@
 
                     <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <li><a class="header__menu-item" href="#">Home</a></li>
-                            <li><a class="header__menu-item" href="#">Services</a></li>
-                            <li><a class="header__menu-item" href="#">About</a></li>
-                            <li><a class="header__menu-item" href="#">Portfolio</a></li>
-                            <li><a class="header__menu-item" href="#">Academic</a></li>
-                            <li><a class="header__menu-item" href="#">Blog</a></li>
+                            <li><a class="header__menu-item" href="#Home">Home</a></li>
+                            <li><a class="header__menu-item" href="#Services">Services</a></li>
+                            <li><a class="header__menu-item" href="#About">About</a></li>
+                            <li><a class="header__menu-item" href="#Portfolio">Portfolio</a></li>
+                            <li><a class="header__menu-item" href="#Academic">Academic</a></li>
+                            <li><a class="header__menu-item" href="#Blog">Blog</a></li>
                             <li><div class="header__menu-item_two">
                                 <a class="header__menu-item" href="#">Contact us</a>
                                 <a class="header__menu-item_tel" href="tel:+966322322">(+966-322 322)</a>
@@ -70,14 +69,14 @@
 
                             <div id="header__slider-controls">
                                 <label for="switch-1"></label>
-                                <label for="switch-1"></label>
-                                <label for="switch-1"></label>
+                                <label for="switch-2"></label>
+                                <label for="switch-3"></label>
                             </div>
 
                             <div id="header__slider-active">
                                 <label for="switch-1"></label>
-                                <label for="switch-1"></label>
-                                <label for="switch-1"></label>
+                                <label for="switch-2"></label>
+                                <label for="switch-3"></label>
                             </div>
 
                         </div>
@@ -88,7 +87,7 @@
         </div>
     </header>
 
-    <section class="services">
+    <section class="services" id="Services">
         <div class="container">
 
             <div class="services__content">
@@ -101,7 +100,7 @@
 
                     <div class="services__content-infoitem">
                         <div class="services__content-images">
-                            <img class="services__content-image" src="" alt="image">
+                            <img class="services__content-image" src="/assets/img/service.png" alt="image">
                         </div>
                         <div class="services__content-details">
                             <div class="services__content-details_title">
@@ -135,13 +134,13 @@
                             <div class="services__content-details_btn">Wiew More</div>
                         </div>
                         <div class="services__content-images">
-                            <img class="services__content-image" src="" alt="image">
+                            <img class="services__content-image" src="/assets/img/service.png" alt="image">
                         </div>
                     </div>
 
                     <div class="services__content-infoitem">
                         <div class="services__content-images">
-                            <img class="services__content-image" src="" alt="image">
+                            <img class="services__content-image" src="/assets/img/service.png" alt="image">
                         </div>
                         <div class="services__content-details">
                             <div class="services__content-details_title">
@@ -165,11 +164,15 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="About">
         <div class="container">
 
             <div class="content__title">
                 How We Work
+            </div>
+
+            <div class="about__image">
+                <img class="about__image-work" src="/assets/img/work.png" alt="about">
             </div>
 
         </div>
@@ -189,7 +192,7 @@
 
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/note.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -205,7 +208,7 @@
 
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/icd.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -221,7 +224,7 @@
 
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/notebook.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -241,7 +244,7 @@
 
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/pencil.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -257,7 +260,7 @@
     
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/wallet.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -273,7 +276,7 @@
     
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/hand.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -293,7 +296,7 @@
 
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/glob.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -309,7 +312,7 @@
     
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/cop.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -325,7 +328,7 @@
     
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/bag.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -345,7 +348,7 @@
 
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/dish.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -361,7 +364,7 @@
     
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/wealth.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -377,7 +380,7 @@
     
                         <div class="features__content-row_item">
                             <div class="features__content-item_img">
-                                <img src="" alt="img">
+                                <img src="/assets/img/soft.png" alt="img">
                             </div>
                             <div class="features__content-item_details">
                                 <div class="features__content-item_title">
@@ -410,6 +413,71 @@
 
                 <div class="packages__price">
 
+                    <div class="packages__price-item">
+
+                        <div class="packages__price-item_title">
+                            Basic
+                        </div>
+
+                        <ul class="packages__price-item_list">
+                            <li>5 websites<hr></li>
+                            <li>15 e-mails<hr></li>
+                            <li>5 MySQL databases<hr></li>
+                            <li>10 GB storage<hr></li>
+                        </ul>
+
+                        <div class="packages__price-item_price">
+                            <span>$5/</span>mo.
+                        </div>
+
+                        <a class="packages__price-item_btn" href="#">Order Now</a>
+
+                        <hr class="packages__price-item_line">
+                    </div>
+
+                    <div class="packages__price-item">
+
+                        <div class="packages__price-item_title">
+                            Standart
+                        </div>
+
+                        <ul class="packages__price-item_list">
+                            <li>15 websites<hr></li>
+                            <li>40 e-mails<hr></li>
+                            <li>20 MySQL databases<hr></li>
+                            <li>50 GB storage<hr></li>
+                        </ul>
+
+                        <div class="packages__price-item_price">
+                            <span>$12/</span>mo.
+                        </div>
+
+                        <a class="packages__price-item_btn" href="#">Order Now</a>
+
+                        <hr class="packages__price-item_line">
+                    </div>
+
+                    <div class="packages__price-item">
+
+                        <div class="packages__price-item_title">
+                            Premium
+                        </div>
+
+                        <ul class="packages__price-item_list">
+                            <li>30 websites<hr></li>
+                            <li>50 e-mails<hr></li>
+                            <li>40 MySQL databases<hr></li>
+                            <li>100 GB storage<hr></li>
+                        </ul>
+
+                        <div class="packages__price-item_price">
+                            <span>$19/</span>mo.
+                        </div>
+
+                        <a class="packages__price-item_btn" href="#">Order Now</a>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -421,7 +489,7 @@
             <div class="history__content">
 
                 <div class="history__content-image">
-                    <img class="history__content-img" src="" alt="img">
+                    <img class="history__content-img" src="/assets/img/history.png" alt="img">
                 </div>
 
                 <div class="history__content-details">
@@ -446,6 +514,289 @@
         </div>
     </secction>
 
-    <script src="/assets/js/main.js"></script> 
+    <section class="portfolio" id="Portfolio">
+        <div class="container">
+
+            <div class="portfolio__content">
+
+                <div class="content__title">
+                    Our Business Related Projects
+                </div>
+
+                <div class="potrfolio__content-group">
+                    <img class="potrfolio__content-image" src="/assets/img/portfolio_group.png" alt="portfolio">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="team" id="Academic">
+
+            <div class="team__content">
+
+                <div class="team__content-top">
+                    <div class="container">
+
+                        <div class="content__title">
+                            Our Team Members
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="team__content-bottom">
+                    <div class="container">
+
+                       <div class="team__content-group">
+
+                            <div class="team__content-item">
+
+                                <div class="team__content-item_image">
+                                    <img class="team__content-item_img" src="/assets/img/team-1.png" alt="team">
+                                </div>
+
+                                <div class="team__content-item_description">
+                                    <div class="team__content-item_name">
+                                        Syed Miraj
+                                    </div>
+                                    <div class="team__content-item_job">
+                                        ui & ux designed
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team__content-item">
+
+                                <div class="team__content-item_image">
+                                    <img class="team__content-item_img" src="/assets/img/team-2.png" alt="team">
+                                </div>
+
+                                <div class="team__content-item_description">
+                                    <div class="team__content-item_name">
+                                        Penny Huston
+                                    </div>
+                                    <div class="team__content-item_job">
+                                        developer
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team__content-item">
+
+                                <div class="team__content-item_image">
+                                    <img class="team__content-item_img" src="/assets/img/team-3.png" alt="team">
+                                </div>
+
+                                <div class="team__content-item_description">
+                                    <div class="team__content-item_name">
+                                        Lennerd Shelly
+                                    </div>
+                                    <div class="team__content-item_job">
+                                        Reviewer
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team__content-item">
+
+                                <div class="team__content-item_image">
+                                    <img class="team__content-item_img" src="/assets/img/team-4.png" alt="team">
+                                </div>
+
+                                <div class="team__content-item_description">
+                                    <div class="team__content-item_name">
+                                        Sheldon Cupper
+                                    </div>
+                                    <div class="team__content-item_job">
+                                        marketter 
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team__content-item">
+
+                                <div class="team__content-item_image">
+                                    <img class="team__content-item_img" src="/assets/img/team-5.png" alt="team">
+                                </div>
+
+                                <div class="team__content-item_description">
+                                    <div class="team__content-item_name">
+                                        Ashley Cole
+                                    </div>
+                                    <div class="team__content-item_job">
+                                        Management
+                                    </div>
+                                </div>
+
+                            </div>
+
+                       </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <section class="support" id="Blog">
+        <div class="container">
+
+            <div class="support__content">
+
+                <div class="content__title">
+                    Updates & Support
+                </div>
+
+                <div class="support__content-details">
+
+                    <div class="support__content-description">
+
+                        <div class="support__content-description_text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem nostrum ipsam corrupti totam expedita inventore consectetur unde odit similique veritatis culpa qui, autem voluptatum neque, minus ut repellendus magnam.
+                            Voluptatum reiciendis accusamus voluptates eius ipsa non numquam. Eum officiis nulla quisquam beatae dignissimos qui id ea, doloremque quam, adipisci natus sunt quidem velit harum soluta saepe molestiae. Nam, natus!
+                            Maxime nulla eligendi explicabo ipsum rem cum debitis quae, laudantium numquam fugiat, asperiores enim illo. Sunt, laboriosam? Nesciunt reiciendis voluptates fugiat autem, inventore neque voluptate maxime quidem et cumque ullam.
+                        </div>
+
+                        <a class="support__content-description_btn" href="#">Support Center</a>
+
+                    </div>
+
+                    <div class="support__content-image">
+                        <img class="support__content-img" src="/assets/img/support-pc.png" alt="support">
+                    </div>
+
+                </div>
+
+                <div class="support__content-order">
+
+                    <div class="support__content-order_topimage">
+                        <img class="support__content-order_img" src="/assets/img/order.png" alt="order">
+                    </div>
+
+                    <div class="support__content-order_line">
+
+                        <div class="support__content-order_title">
+                            Need creative workers?
+                        </div>
+
+                        <a class="support__content-order_btn" href="#">Hire us</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__content">
+
+                <div class="footer__content-top">
+
+                    <div class="footer__content-item">
+                        <div class="footer__content-item_title">
+                            Portfolio
+                        </div>
+                        <div class="footer__content-item_about">
+                            <ul class="footer__content-item_list">
+                                <li>Web Design</li>
+                                <li>Branding & Identity</li>
+                                <li>Mobile Design</li>
+                                <li>Print</li>
+                                <li>User Interface</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-item">
+                        <div class="footer__content-item_title">
+                            About
+                        </div>
+                        <div class="footer__content-item_about">
+                            <ul class="footer__content-item_list">
+                                <li>The Company</li>
+                                <li>History</li>
+                                <li>Vision</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-item">
+                        <div class="footer__content-item_title">
+                            Galerry
+                        </div>
+                        <div class="footer__content-item_about">
+                            <ul class="footer__content-item_list">
+                                <li>Flikr</li>
+                                <li>Picasa</li>
+                                <li>iStockPhoto</li>
+                                <li>PhotoDune</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-item">
+                        <div class="footer__content-item_title">
+                            Contact
+                        </div>
+                        <div class="footer__content-item_about">
+                            <ul class="footer__content-item_list">
+                                <li>Basic Info</li>
+                                <li>Map</li>
+                                <li>Contact Form</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer__content-bottom">
+
+                    <div class="footer__content-bottom_social">
+                        <div class="facebook"> 
+                            <a class="facebook_link" href="#">
+                                <img class="f-b" src="/assets/img/facebook.png" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="twitter">
+                            <a class="twitter_link" href="#">
+                                <img class="t-r" src="/assets/img/twitter.png" alt="twitter">
+                            </a>
+                        </div>
+                        <div class="google">
+                            <a class="google_link" href="#">
+                                <img class="g-l" src="/assets/img/google.png" alt="google">
+                            </a>
+                        </div>
+                        <div class="in">
+                            <a class="in_link" href="#">
+                                <img class="in" src="/assets/img/in.png" alt="in">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-bottom_copyright">
+                        Copyright © 2015 Syed Miraj. All rights reserved.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>   
 </body>
 </html>
