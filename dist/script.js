@@ -2448,9 +2448,15 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_animated__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/animated */ "./src/js/modules/animated.js");
+/* harmony import */ var _modules_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/color */ "./src/js/modules/color.js");
+/* harmony import */ var _modules_colorBtn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/colorBtn */ "./src/js/modules/colorBtn.js");
+
+
 
 window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_animated__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_color__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_colorBtn__WEBPACK_IMPORTED_MODULE_2__["default"])();
 });
 console.log(1);
 
@@ -2480,10 +2486,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var dots = function dots() {
   function showSliderByTime(selector, time) {
+    var elements = document.querySelectorAll("label");
     var sliderArray = selector.map(function (item) {
       return document.getElementById(item);
     });
     var tempArray = [];
+    var tepmDot = [];
     var generator = /*#__PURE__*/regeneratorRuntime.mark(function generator(array) {
       var i, length;
       return regeneratorRuntime.wrap(function generator$(_context) {
@@ -2522,23 +2530,43 @@ var dots = function dots() {
             x.setAttribute('checked', '');
             setTimeout(function () {
               x.removeAttribute('checked');
-            }, 2999);
+            }, 4999);
           }
         }, i * delay);
       };
     };
 
+    var delayLoopDot = function delayLoopDot(delay) {
+      return function (x, i) {
+        setTimeout(function () {
+          if (x.classList.contains('active')) {
+            x.classList.remove('active');
+          } else {
+            x.classList.add('active');
+            setTimeout(function () {
+              x.classList.remove('active');
+            }, 4999);
+          }
+        }, i * delay);
+      };
+    };
+
+    var dots = generator(elements);
     var slider = generator(sliderArray);
 
     for (var i = 0; i < 10; i++) {
       tempArray.push(slider.next());
+      tepmDot.push(dots.next());
     }
 
     var slide = tempArray.map(function (item) {
       return item.value;
     });
+    var dt = tepmDot.map(function (item) {
+      return item.value;
+    });
     slide.forEach(delayLoop(time));
-    console.log(slide);
+    dt.forEach(delayLoopDot(time));
   }
 
   showSliderByTime(['r1', 'r2', 'r3'], 5000);
@@ -2548,15 +2576,71 @@ var dots = function dots() {
 
 /***/ }),
 
+/***/ "./src/js/modules/color.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/color.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var color = function color() {
+  var elements = document.querySelectorAll("label");
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function () {
+      for (var _i = 0; _i < elements.length; _i++) {
+        elements[_i].classList.remove('active');
+      }
+
+      this.classList.add('active');
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (color);
+
+/***/ }),
+
+/***/ "./src/js/modules/colorBtn.js":
+/*!************************************!*\
+  !*** ./src/js/modules/colorBtn.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var colorAdressBtn = function colorAdressBtn() {
+  var elements = document.querySelectorAll('a');
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function () {
+      for (var _i = 0; _i < elements.length; _i++) {
+        elements[_i].classList.remove('active');
+      }
+
+      this.classList.add('active');
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (colorAdressBtn);
+
+/***/ }),
+
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi ./src/js/main.js ./src/js/modules/animated.js ***!
-  \***********************************************************/
+/*!******************************************************************************************************************!*\
+  !*** multi ./src/js/main.js ./src/js/modules/animated.js ./src/js/modules/color.js ./src/js/modules/colorBtn.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\main.js */"./src/js/main.js");
-module.exports = __webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\modules\animated.js */"./src/js/modules/animated.js");
+__webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\modules\animated.js */"./src/js/modules/animated.js");
+__webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\modules\color.js */"./src/js/modules/color.js");
+module.exports = __webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\modules\colorBtn.js */"./src/js/modules/colorBtn.js");
 
 
 /***/ })

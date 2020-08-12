@@ -2,8 +2,10 @@ const dots = () => {
 
     function showSliderByTime(selector, time) {
 
+        let elements = document.querySelectorAll("label");
         const sliderArray = selector.map(item => document.getElementById(item));
         const tempArray = [];
+        const tepmDot = [];
 
         const generator = function* (array) {
             let i = 0;
@@ -24,21 +26,40 @@ const dots = () => {
                             x.setAttribute('checked', '');
                             setTimeout( () => {
                                 x.removeAttribute('checked');
-                            },2999);
+                            },4999);
                         }
                 }, i * delay);
             };
         };
 
+        const delayLoopDot = (delay) => {
+            return (x, i) => {
+                setTimeout( () => {
+                        if (x.classList.contains('active')) {
+                            x.classList.remove('active');
+                        } else {
+                            x.classList.add('active');
+                            setTimeout( () => {
+                                x.classList.remove('active');
+                            },4999);
+                        }
+                }, i * delay);
+            };
+        };
+
+        const dots = generator(elements);
         const slider = generator(sliderArray);
+
         for (let i = 0; i < 10; i++) {
             tempArray.push(slider.next());
+            tepmDot.push(dots.next());
         }
 
         const slide = tempArray.map(item => (item.value));
+        const dt = tepmDot.map(item => (item.value));
 
         slide.forEach(delayLoop(time));
-        console.log(slide);
+        dt.forEach(delayLoopDot(time));
         
     }
 
