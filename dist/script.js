@@ -113,14 +113,12 @@ console.log(1);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var dots = function dots() {
-  function showSliderByTime(selector, time) {
-    setTimeout(function () {
-      document.querySelector(selector).style['margin-left'] = '-20%';
-    }, time);
-  }
-
-  showSliderByTime('.header__slider s1', 3000);
+var dots = function dots() {// function showSliderByTime(selector, time) {
+  //     setTimeout(function() {
+  //         document.querySelector(selector).style['margin-left'] = '-20%';
+  //     }, time);
+  // }
+  // showSliderByTime('.header__slider s1', 3000);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (dots);
@@ -134,8 +132,8 @@ var dots = function dots() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! c:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\main.js */"./src/js/main.js");
-module.exports = __webpack_require__(/*! c:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\modules\animated.js */"./src/js/modules/animated.js");
+__webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! C:\Users\maxty\Desktop\WEBprojects\Git\unique\src\js\modules\animated.js */"./src/js/modules/animated.js");
 
 
 /***/ })
