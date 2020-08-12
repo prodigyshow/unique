@@ -1,5 +1,6 @@
 import dots from './modules/animated'
 
+
 window.addEventListener('DOMContentLoaded', () => {
     dots();
 });
