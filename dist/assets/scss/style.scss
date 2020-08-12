@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize";
+@import "../../../node_modules/normalize.css/normalize";
 @import "modules/var";
 
 // MAIN
@@ -159,6 +159,7 @@ input[name = "r"] {
 #r1:checked ~ .s1 {
     margin-left: 0;
 }
+
 #r2:checked ~ .s1 {
     margin-left: -20%;
 }
