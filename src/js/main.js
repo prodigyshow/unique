@@ -4,8 +4,8 @@ import colorAdressBtn from './modules/colorBtn';
 
 window.addEventListener('DOMContentLoaded', () => {
     dots();
-    color();
-    colorAdressBtn();
+    color('label');
+    color('a');
 });
 
 console.log(1);

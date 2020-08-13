@@ -1,6 +1,6 @@
-const color = () => {
+const color = (selector) => {
 
-    let elements = document.querySelectorAll("label");
+    let elements = document.querySelectorAll(selector);
 
         for (let i = 0; i < elements.length; i++) { 
             
