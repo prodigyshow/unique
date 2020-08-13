@@ -1,11 +1,10 @@
 import dots from './modules/animated';
 import color from './modules/color';
-import colorAdressBtn from './modules/colorBtn';
+import scroll from './modules/scroll';
 
 window.addEventListener('DOMContentLoaded', () => {
     dots();
     color('label');
     color('a');
+    scroll('scroll');
 });
-
-console.log(1);
